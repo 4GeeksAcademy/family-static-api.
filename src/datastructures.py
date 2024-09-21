@@ -45,7 +45,7 @@ class FamilyStructure:
         # fill this method and update the return
         new_person = {
             
-                "id": self._generateId(), 
+                "id": member.get("id", self._generateId()), 
                 "first_name": member.get("first_name"), 
                 "last_name": self.last_name, 
                 "age": member.get("age"), 
